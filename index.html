@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Search Banner -->
+  <div class="search-banner">
+    <h1>EXPLORE THE COLOR<BR> OF LIFE</h1>
+    <input type="text" id="searchInput" placeholder="Search images..." oninput="searchImages()">
+  </div>
+<div class="hadding">
+    <h2>Gallery</h2>
+</div>
+  <div class="gallery-container">
+    <div class="gallery-grid" id="galleryGrid"></div>
+    <div class="no-images" id="noImages">No images found</div>
+    <div class="load-more">
+      <button id="loadMoreBtn">Load More</button>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div id="imageModal" class="modal">
+    <span class="close-btn">&times;</span>
+    <img class="modal-content" id="modalImage">
+    <div class="modal-navigation">
+      <button class="prev" id="prevBtn">&#10094;</button>
+      <button class="next" id="nextBtn">&#10095;</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
